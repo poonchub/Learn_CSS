@@ -1,0 +1,44 @@
+/* 
+หน่วยใน CSS
+    Absolute แบบตายตัว
+    - px    1px = 0.75pt    (ใช้มากที่สุด)
+    - pt    1pt = 1/72inchs (ใช้ในการสั่งพิมพ์)
+    - cm
+    - mm
+    - in    1in = 96px = 2.54cm
+    - pc    1pc = 12pt
+    
+    Relative แบบอัตราส่วน/แบบอ้างอิงตามอัตราส่วน
+    - %     ใช้กับความสูง/ความกว้าง
+    - em    อ้างอิงตาม element parent
+    - rem   กำหนดขนาดโดยอ้างอิงกับ root element ปกติ font_size จะอยู่ที่ 16px
+    - vw    1% หรือ 1/100 ของ viewport wigth
+    - vh    1% หรือ 1/100 ของ viewport height
+    - vmin, vmax    กำหนดค่าต่ำสุด และค่าสูงสุดของ viewport
+
+*/
+.a{
+    color: red;
+}
+.a h1{
+    font-size: 40px;
+}
+.a h2{
+    font-size: 1.5cm;
+}
+.a h3{
+    font-size: 2pc;
+}
+.b{
+    color: green;
+    font-size: 100%;
+}
+.b h1{
+    font-size: 100%;
+}
+.b h2{
+    font-size: 4rem;
+}
+.b h3{
+    font-size: 2em;
+}

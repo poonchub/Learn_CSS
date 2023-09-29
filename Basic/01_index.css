@@ -1,0 +1,14 @@
+.lname{
+    color: aquamarine;
+    text-align: center;
+    font-size: 70px;
+    font-style: oblique;
+}
+
+/* Universal Selector
+    กำหนด style sheet ที่มีผลต่อทุก tag ของเว็บ โดยใช้เครื่องหมาย *
+*/
+*{
+    color: violet;
+    font-size: 25px;
+}
