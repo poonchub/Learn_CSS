@@ -1,0 +1,18 @@
+/* 
+หน่วยใน CSS
+    Absolute แบบตายตัว
+    - px    1px = 0.75pt    (ใช้มากที่สุด)
+    - pt    1pt = 1/72inchs (ใช้ในการสั่งพิมพ์)
+    - cm
+    - mm
+    - in    1in = 96px = 2.54cm
+    - pc    1pc = 12pt
+
+    Relative แบบอัตราส่วน
+*/
+.lname{
+    color: aquamarine;
+    text-align: center;
+    font-size: 70px;
+    font-style: oblique;
+}
