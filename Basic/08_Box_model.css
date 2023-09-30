@@ -1,0 +1,45 @@
+/*  
+    Box Model การกำหนดพื้นที่รอบ Element 
+    (ลำดับ เนื้อหา>padding>border>margin)
+        Margin  กำหนดระยะห่างจากเส้นขอบ (ช่องว่างข้างนอก)
+        Padding กำหนดพื้นที่ระยะห่างภายในของ Element (ช่องว่างข้างใน)
+        หน่วยที่กำหนดได้ Ex. px, pt, cm, % โดยมีค่า default เป็น 0
+    Margin
+        - margin: ค่าที่กำหนด
+        - margin-xxx: ค่าที่กำหนด       xxx คือ  top, bottom, left, right
+        - margin: auto;               ให้ browser กำหนด ปกติจะกำหนดกึ่งกลาง
+
+    Padding
+        - padding: ค่าที่กำหนด
+        - padding-xxx: ค่าที่กำหนด      xxx คือ  top, bottom, left, right
+        padding: auto;                ให้ browser กำหนด ปกติจะกำหนดกึ่งกลาง
+
+    การเขียนแบบสั้น
+        margin: P1 P2 P3 P4
+        margin: P1 (P2,P4) P3
+        margin: (P1,P4) (P2,P4)
+        - P1    top
+        - P2    right
+        - P3    bottom
+        - P4    left
+*/
+div{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    border: solid 1px red;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.a{
+    margin: 20px;
+    padding: 20px;
+}
+.b{
+    margin-left: 50px;
+}
+.c{
+    margin: auto;
+}

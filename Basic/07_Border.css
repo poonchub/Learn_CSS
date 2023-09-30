@@ -14,8 +14,14 @@
     border-xxx-width: ขนาด          xxx คือ top, bottom, left, right
 
     การเขียนแบบสั้น 
-    Ex. border-radius: P1 P2 P3 P4      P คือ ตำแหน่ง
-
+    Ex. border-radius: P1 P2 P3 P4
+        border-radius: P1 (P2,P3) P4
+        border-radius: (P1,P3) (P2,P4)
+        border-radius: (P1,P2,P3,P4)
+        - P1 top-left
+        - P2 top-right
+        - P3 bottom-right
+        - P4 bottom-left
 */
 div{
     width: 100px;

@@ -1,0 +1,50 @@
+/*
+การกำหนดตำแหหน่งการลอยขแงวัตถุ
+float   กำหนดให้ element สามารถลอยอยู่ด้าานใดด้านหนึ่ง คือ
+    - left, right
+    - inherit       ลอยตาม parent element
+    - non           ไม่ให้มีการลอย (default)
+
+clear   ไม่อนุญาตให้มีการลอยของ elemant
+    - left, right
+    - both          ไม่อนุญาตให้มีการลอยทั้งสองด้าน
+*/
+
+*{
+    line-height: 0.5cm;
+    box-sizing: border-box;     /* คำนวณขนาดตามค่าจริง */
+}
+img{
+    width: 150px;
+}
+.box1 img{
+    float: left;
+}
+.box2 img{
+    float: right;
+}
+.box3{
+    clear: both; 
+    border: solid 1px red;
+}
+.container{
+    width: 650px;
+    margin: 30px auto;
+}
+.box4{
+    border: solid 1px black;
+    background-color: lightgray;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+#box5{
+    width: 70%;
+    float: left;
+}
+#box6{
+    width: 30%;
+    float: right;
+}
+.clear{
+    clear: both;
+}

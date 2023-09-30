@@ -1,0 +1,44 @@
+/*  
+Background
+    background-color: สี                     การกำหนดสีพื้นหลัง
+    background-image: url("รูปภาพในเครื่อง")
+    background-image: url(link)
+    background-repeat: กำหนดค่า              การจัดรูปแบบพื้นหลัง
+        - repeat    ทำให้ภาพซ้ำเต็มพื้นที่(default)
+        - repeat-x  ทำซ้ำในแนวแกน x
+        - repeat-y  ทำซ้ำในแนวแกน y
+        - no-repeat ไม่ทำภาพซ้ำ
+    
+    background-attachment                   การกำหนดคุณสมบัติพื้นหลัง
+        - scroll    เลื่อนพื้นหลังตาม scrollbar
+        - fixed     ตรึงพื้นหลังไว้กับที่
+
+    backgroung-position: กำหนดค่า            การกำหนดตำแหน่งพื้นหลัง
+    background-size: กำหนดค่า                การกำหนดขนาดพื้นหลัง
+        - auto      ค่าปกติของภาพ
+        - px, %     
+        - cover     ขยาพภาพทั้งกว้างและสูงเต็มจอในอัตราส่วนเท่ากัน
+        - contain   ขยายภาพทั้งกว้างและสูงชนขอบ browser
+    
+    กำหนดพื้นหลังแบบหลายคุณสมบัติ
+    background: white url('') repeat fixed center;
+*/
+body{
+    background-image: url('https://onceinlife.co/wp-content/uploads/2021/05/1-1-768x512.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+div{
+    width: 200px;
+    height: 200px;
+}
+.a{
+    background-color: pink;
+}
+.b{
+    background-image: url('https://sutthiawareekul489.files.wordpress.com/2018/02/frog-1109768_960_720.jpg?w=336');
+    background-repeat: repeat;
+    background-position:center;
+    background-size: cover;
+}

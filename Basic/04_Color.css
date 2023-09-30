@@ -1,8 +1,8 @@
 /* Color
     ชื่อสี: green,red,yellow,pink
-    RGB: rgb(red,green,blue),rgb(30%,20%,45%)
+    RGB: rgb(red%,green%,blue%),rgb(30%,20%,45%)
     Hexadecimal: #000,#fff
-    HSL: (hue,saturation,lightness)
+    HSL: hsl(hue,saturation%,lightness%)
 */
 .a{
     color: blueviolet;
