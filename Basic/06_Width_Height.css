@@ -1,0 +1,22 @@
+/*  
+    width / height
+    min-width
+    max-width
+    min-heigth
+    max-heigth
+    - auto      browser จะกำหนดให้เอง
+    - length    ความกว้างแบบหน่วยวัด Ex. px cm
+    - %         ความกว้างแบบยืดหยุ่น 
+*/
+div{
+    background-color: aquamarine;
+    width: auto;
+    height: 200px;
+    min-width: 200px;
+    max-width: 500px;
+    min-height: 100px;
+    max-height: 1000px;
+}
+img{
+    width: 70%;
+}

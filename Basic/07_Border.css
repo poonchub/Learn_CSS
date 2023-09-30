@@ -1,0 +1,40 @@
+/* 
+    border: รูปแบบ ขนาด สี            เส้นขอบ
+
+    border-style: รูปแบบ             รูปแบบเส้นขอบ
+    border-xxx-style: รูปแบบ         xxx คือ top, bottom, left, right
+
+    border-radius: ขนาด      ส่วนโค้ง P คือตำแหน่ง
+    border-xxx-yyy-radius: ขนาด    xxx คือ top, bottom / yyy คือ left, right
+
+    border-color: สี                 สีเส้นขอบ
+    border-xxx-corlor: สี            xxx คือ top, bottom, left, right
+
+    border-width: ขนาด              ขนาดเส้นขอบ
+    border-xxx-width: ขนาด          xxx คือ top, bottom, left, right
+
+    การเขียนแบบสั้น 
+    Ex. border-radius: P1 P2 P3 P4      P คือ ตำแหน่ง
+
+*/
+div{
+    width: 100px;
+    height: 100px;
+}
+.box1{
+    background-color: yellow;
+    border: solid 3px black;
+}
+.box2{
+    background-color: aquamarine;
+    border: dotted 3px black;
+}
+.box3{
+    background-color: blue;
+    border: dashed 3px red;
+    border-bottom-left-radius: 30%;
+}
+.box4{
+    background-color: red;
+    border-radius: 50%;
+}

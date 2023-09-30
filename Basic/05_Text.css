@@ -1,0 +1,25 @@
+/* 
+    Text_decoration
+    - non           ค่าว่าง
+    - underline     ขีดเส้นใต้
+    - overline      ขีดเส้นเหนือข้อความ
+    - line-through  ขีดเส้นทับข้อความ
+
+    Text-align
+    - lift,right,center จัดข้อความตามตำแหน่ง
+    - justify           กระจายข้อความให้ทุกบรรทัดเท่ากัน
+*/
+.a{
+    text-decoration: non;
+    text-align: center;
+}
+.b{
+    text-decoration: underline;
+}
+.c{
+    text-decoration: overline;
+}
+.d{
+    text-decoration: line-through;
+    text-align: justify;
+}
