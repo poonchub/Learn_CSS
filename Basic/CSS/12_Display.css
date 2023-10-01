@@ -1,0 +1,28 @@
+/*  
+Display คือการจัดรูปแบบการแสดงผลข้อมูล layout
+    - none          ไม่มีการแสดงผล
+    - block         แสดงผลแบบ block โดยขึ้นบรรทัดใหม่ก่อน(แนวตั้ง)
+    - inline        แสดงผลแบบ inline โดยไม่ขึ้นบรรทัดใหม่(แนวนอน)
+    - inline-block  แสดงผลแบบแนวนอนและขยายเต็มพื้นที่ด้านใน
+*/
+ul{
+    width: 500px;
+    text-align: center;
+}
+li{
+    display: inline;
+    
+}
+li a{
+    padding-right: 20px;
+    text-decoration: none;
+}
+.box{
+    width: 30%;
+    box-sizing: border-box;
+    border: solid 1px black;
+    display: inline-block;
+    padding: 20px;
+    margin: 10px;
+    background-color: lightgray;
+}

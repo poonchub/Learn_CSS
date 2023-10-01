@@ -1,0 +1,60 @@
+/* 
+การกำหนด style ให้กับ link
+    :link     กำหนดรูปแบบให้ link ที่ยังไม่ถูกคลิก
+    :visited  กำหนดรูปแบบให้ link ที่ถูกคลิก
+    :hover    กำหนดรูปแบบให้ link เมื่อนำเมาส์ไปวาง
+    :active  กำหนดรูปแบบให้ link ขณะที่ถูกคลิก
+*/
+body,html{
+    scroll-behavior: smooth;
+}
+*{
+    line-height: 0.8cm;
+}
+div{
+    width: 500px;
+    text-align: center;
+    border: dotted 2px red;
+    padding: 5px;
+    margin: 10px;
+}
+.link:link{
+    color: green;
+    text-decoration: none;
+}
+.link:visited{
+    color: black;
+}
+.link:hover{
+    text-decoration: underline;
+    background-color: yellow;
+    color: black;
+    padding: 4px;
+    text-align: center;
+    border-radius: 40%;
+}
+.link:active{
+    background-color: pink;
+    text-decoration: none;
+}
+.container{
+    width: 600px;
+    height: 1500px;
+    border: solid 2px black;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin: 10px;
+}
+#box1{
+    position: absolute;
+    background-color: gray;
+}
+#box2{
+    position: absolute;
+    left: 400px;
+    top: 1000px;
+    background-color: lightcoral;
+}

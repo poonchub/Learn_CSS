@@ -1,0 +1,15 @@
+/*
+visibility คือการแสดงหรือซ่อนวัตถุโดยไม่กระทบ layuot
+    - hidden    ซ่อนวัตถุ
+    - visible   แสดงวัตถุ
+*/
+div{
+    border: solid 1px black;
+    text-align: center;
+}
+img{
+    width: 500px;
+}
+#img1{
+    visibility: hidden;
+}

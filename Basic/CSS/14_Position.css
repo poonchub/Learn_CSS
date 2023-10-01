@@ -1,0 +1,53 @@
+/*
+position    ใช้ในการจัดตำแหน่งของวัตถุ
+    - static    จัดวางแบบปกติ(fault)
+    - relative  กำหนดตำแหน่งโดยนับจากจุดที่วัตถุนั้นอยู่
+    - absolute  จัดตำแหน่งวัตถุให้ไปอยู่ตำแหน่งใดก็ได้ แต่ต้องกำหนดตำแหน่งจากขอบ element
+    - fixed     จัดตำแหน่งวัตถุให้อยู่ตำแหน่งเดิม
+    - sticky    ให้วัตถุติดขอบเมื่อเลื่อนไปถึง
+
+    ** ต้องกำหนดค่าทิศทางด้วย Ex. left: 50px **
+
+z-index     ใช้ในการจัดตำแหน่ง layer
+*/
+html{
+    scroll-behavior: smooth;
+}
+body{
+    height: 1500px;
+}
+.container{
+    width: 600px;
+    height: 1500px;
+    border: solid 2px black;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin: 10px;
+}
+#box1{
+    position: static;
+    background-color: gray;
+}
+#box2{
+    position: relative;
+    left: 120px;
+    background-color: lightcoral;
+}
+#box3{
+    position: absolute;
+    top: 500px;
+    background-color: lightblue;
+}
+#box4{
+    position: fixed;
+    background-color: lightgreen;
+    left: 350px;
+}
+#box5{
+    position: sticky;
+    background-color: lightsalmon;
+    top: 200px;
+}
