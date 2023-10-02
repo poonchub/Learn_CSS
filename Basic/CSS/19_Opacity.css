@@ -1,0 +1,23 @@
+/*
+Opacity การกำหนดค่าความทึบ
+    opacity:value
+    - ค่าระหว่าง 0.0-1.0
+    - ยิ่งค่าน้อยยิ่งจาง
+    - ยิ่งค่ามากยิ่งทึบ
+*/
+.img{
+    width: 300px;
+    margin: 20px;
+}
+#a{
+    opacity: 0.2;
+}
+#b{
+    opacity: 0.5;
+}
+#c{
+    opacity: 0.9;
+}
+#d:hover{
+    opacity: 0.3;
+}

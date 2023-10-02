@@ -1,0 +1,17 @@
+/*
+Curser Style
+- auto      - default           - none          - context-menu  - help
+- pointer   - progress          - wait          - cell          - crosshair
+- text      - vertical-text     - alias         - copy          - move
+- no-drop   - not-allowed       - all-scrool    - col-resize    - rowresize
+- n-resize  - s-resize          - e-resize      - w-resize      - ns-resize
+- ex-resize - ne-resize         - nw-resize     - se-resize     - sw-resize
+- neaw-resize                   - nwse-resize
+*/
+img{
+    width: 250px;
+    margin: 20px;
+}
+img:hover{
+    cursor: pointer;
+}

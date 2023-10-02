@@ -1,0 +1,11 @@
+/*
+ลำดับความสำคัญของ style
+- เรียงลำดับความสำคัญของ style
+- !important กำหนดให้มีความสำคัญที่สุด
+*/
+h2{
+    color: red !important;
+}
+.a{
+    color: blue;
+}

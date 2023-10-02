@@ -1,0 +1,27 @@
+/*
+Overflow
+    - visible       แสดงข้อมูลทั้งหมด(defualt)
+    - hidden        ซ่อนข้อมูลที่เกิน
+    - scroll        ให้มี scroll bar แสดงผลเมื่อข้อมูลเกิน
+        - overflow:scroll
+        - overflow-x: scroll
+        - overflow-y: scroll
+    - auto          ให้มี scroll bar แสดงผลออกมาอัตโนมัติ
+*/
+.box{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+#box1{
+    background-color: lightgray;
+    overflow: scroll;
+}
+#box2{
+    background-color: lightgray;
+    overflow: hidden;
+}
+#box3{
+    background-color: lightgray;
+    overflow: auto;
+}
