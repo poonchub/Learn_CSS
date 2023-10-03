@@ -1,0 +1,24 @@
+/*
+flex  ใข้จัดตำแหน่งของ element ได้ง่ายขึ้น กำหนดขนาดให้พอดีกับพื้นที่ว่างแบบอัตโนมัติ(sizing)
+ประกอบด้วย 
+    - container กล่องที่ครอบ items (มีพื้นที่ 100%)
+    - items     สมาชิกของ container
+
+.container{
+    display: flex;              จัดวางในรูปแบบ flex
+    box-sizing: border-box;     กำหนดขนาดให้พอดีกับพื้นที่ว่าง โดยคำนวณจากค่าจริง
+}
+*/
+.container{
+    display: flex;
+    box-sizing: border-box;
+    background-color: lightblue;
+}
+.item{
+    background-color: lightgray;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+}

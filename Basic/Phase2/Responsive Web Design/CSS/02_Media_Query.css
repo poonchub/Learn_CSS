@@ -1,0 +1,68 @@
+/* 
+Media Query คือรูปแบบการเขียน style ให้แสดงผลตามขนาดหน้าจอที่แตกต่างกัน
+    @media ขนาดอุปกรณ์{
+        ...style...
+    }
+    @media screen,printer{
+        ...style...
+    }
+
+    ขนาดอุปกรณ์
+    - 320px-480px:      mobile devices
+    - 481px-768px:      ipad,tablets
+    - 769px-1024px:     laptops
+    - 1025px-1200px:    desktops
+    - 1201px เป็นต้นไป:   TV,widscreen
+*/
+body{
+    background-color: lightgray;
+    text-align: center;
+}
+h1{
+    display: none;
+}
+/* Smartphone */
+@media only screen and (max-width:480px){
+    body{
+        background-color: lightcoral
+    }
+    #smartphone h1 {
+        display: block;
+    }
+}
+/* Tablets */
+@media only screen and (min-width:481px) and (max-width:768px){
+    body{
+        background-color: lightgreen;
+    }
+    #tablets h1 {
+        display: block;
+    }
+}
+/* Laptops, Desktops */
+@media only screen and (min-width:769px) and (max-width:1200px){
+    body{
+        background-color: lightsalmon;
+    }
+    #normal h1 {
+        display: block;
+    }
+}
+/* Widescreen */
+@media only screen and (min-width:1201px){
+    body{
+        background-color: lightskyblue;
+    }
+    #widescreen h1 {
+        display: block;
+    }
+}
+/* Landscape */
+@media (max-height:500px) {
+    body{
+        background-color: white;
+    }
+    #landscape h1{
+        display: block;
+    }
+}
