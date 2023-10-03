@@ -1,0 +1,25 @@
+/*  
+การจัดวางตำแหน่ง item ตามแนวแกนตรงข้าม
+align-item  (item ทุกตัว)
+align-self  (item ที่ต้องการ)
+    - stretch       กำหนดขนาด item เท่ากับ container (default)
+    - flex-start    ด้านบน container ทิศทางตามแนวนอน
+    - center        กึ่งกลาง container ทิศทางตามแนวนอน
+    - flex-end      ด้านล่าง container ทิศทางตามแนวนอน
+*/
+.item{
+    background-color: lightgray;
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;  
+}
+.container1{
+    display: flex;
+    box-sizing: border-box;
+    background-color: lightpink;
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
+}

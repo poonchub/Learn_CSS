@@ -1,0 +1,76 @@
+/*
+flex  ใข้จัดตำแหน่งของ element ได้ง่ายขึ้น กำหนดขนาดให้พอดีกับพื้นที่ว่างแบบอัตโนมัติ(sizing)
+ประกอบด้วย 
+    - container กล่องที่ครอบ items (มีพื้นที่ 100%)
+    - items     สมาชิกของ container
+** flex ถูกออกแบบให้จัดการ layout แบบ 1 มิติ **
+
+.container{
+    display: flex;              จัดวางในรูปแบบ flex
+    box-sizing: border-box;     กำหนดขนาดให้พอดีกับพื้นที่ว่าง โดยคำนวณจากค่าจริง
+}
+
+การกำหนดทิศทาง
+** flex-direction  
+    - row               แนวนอนทิศทางเดียวกับแกนหลัก(defualt)
+    - column            แนวตั้งทิศทางเดียวกับแกนหลัก
+    - row-reverse       แนวนอนทิศทางตรงข้ามกับแกนหลัก
+    - column-reverse    แนวตั้งทิศทางตรงข้ามกับแกนหลัก
+
+การหุ้ม item ใน container ในกรณีที่ item เกินพื้นที่ container
+** flex-wrap
+    - nowrap        จัดวางส่วนที่เกิน containner ไปด้านขวา
+    - wrap          จัดวางส่วนที่เกิน containner เรียงจากบนลงล่าง
+    - wrap-reverse  จัดวางส่วนที่เกิน containner เรียงจากล่างขี้นบน
+
+การกำหนดคุณสมบัติให้กับ item ด้านใน container
+** flex-properties
+    - flex-shrink   item หดตัวเท่าใดเทียบกับ item อื่นๆ ค่าเริ่มต้นเป็น 1
+    - flex-grow     item ขยายเท่าใดเทียบกับ item อื่นๆ ค่าเริ่มต้นเป็น 0
+    - flex-basis    กำหนดค่าความยืดหยุ่นเริ่มต้น
+    - flex:1        ทำให้ item ที่อยู่ในแถวเดียวกันมีขนาดเท่ากัน
+*/
+
+/* flex-direction, flex-wrap */
+.container1{
+    display: flex;
+    box-sizing: border-box;
+    background-color: lightblue;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.item1{
+    background-color: lightgray;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    flex: 1;
+}
+
+/* flex-properties */
+.container2{
+    display: flex;
+    box-sizing: border-box;
+    background-color: lightgreen;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+}
+.item2{
+    background-color: lightgray;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+#a{
+    flex-shrink: 2;
+}
+#b{
+    flex-grow: 2;
+}
+#c{
+    flex-basis: 400px;
+}
