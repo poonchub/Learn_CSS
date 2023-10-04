@@ -1,0 +1,15 @@
+/* 
+Text Shadow     การกำหนดเงาให้ข้อความ
+    text-shadow: x y blur color
+
+    x       คือ เงาแกน x (+ขวา,-ซ้าย)
+    y       คือ เงาแกน y (+ล่าง,-บน)
+    blur    คือ ขนาดความมัวของเงา
+    color   คือ สีของเงา
+
+*/
+div h1{
+    font-size: 2cm;
+    text-shadow: 2px 2px 10px red;
+    text-align: center;
+}

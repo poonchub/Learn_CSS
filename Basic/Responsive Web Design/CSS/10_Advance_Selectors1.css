@@ -1,0 +1,23 @@
+/* 
+Advance Selectors  
+    **targeted selectors
+        - descendant selectors
+            แท็กแม่ แท็กลูก(ทุกตัว){
+                code;
+            }
+        - child selectors
+            แท็กแม่>แท็กลูก(ตัวแรก){
+                code;
+            }
+            
+*/
+
+/* descendant selectors */
+div p{
+    background-color: aquamarine;
+}
+
+/* child selectors */
+div>p{
+    background-color: lightpink;
+}

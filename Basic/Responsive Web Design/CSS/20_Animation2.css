@@ -1,0 +1,45 @@
+.container{
+    background-color: gray;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    height: 500px;
+}
+.box1{
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    position: relative;
+    animation-name: animate1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animate1{
+    0%{
+        top:0px;
+        left: 0px;
+        transform: rotate(0deg);
+    }
+    25%{
+        top:0px;
+        left: 600px;
+        transform: rotate(90deg);
+    }
+    50%{
+        top:250px;
+        left: 0px;
+        transform: rotate(180deg);
+    }
+    75%{
+        top:250px;
+        left: 600px;
+        transform: rotate(270deg);
+    }
+    100%{
+        top:0px;
+        left: 0px;
+        transform: rotate(360deg);
+    }
+}

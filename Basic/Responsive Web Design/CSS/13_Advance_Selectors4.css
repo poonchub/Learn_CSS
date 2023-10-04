@@ -1,0 +1,40 @@
+/* 
+Advance Selectors
+    **pseudo selectors
+        - first-child       ตัวแรก
+        - last-child        ตัวสุดท้าย
+        - nth-child         ตัวที่ระบุนับจากตัวแรก
+        - nth-last-child    ตัวที่ระบุนับจากตัวสุดท้าย
+            แท็ก:ตัวที่เลือก{
+                code;
+            }
+*/
+li{
+    padding: 10px;
+    list-style: none;
+}
+
+li:first-child{
+    background-color: lightcoral;
+}
+li:last-child{
+    background-color: lightgreen;
+}
+li:nth-child(3){
+    background-color: lightskyblue;
+}
+
+/* 
+**เลือกทุกๆ 2 ตัว
+li:nth-child(2n){
+    background-color: lightyellow;
+}
+**เลือกทุกๆ 2 ตัว เริ่มจากตัวที่ 5
+li:nth-child(2n+5){
+    background-color: lightseagreen;
+}
+**เลือกตัวที่เป็นเลขคี่
+li:nth-child(odd){
+    background-color: lightslategray;
+} 
+*/

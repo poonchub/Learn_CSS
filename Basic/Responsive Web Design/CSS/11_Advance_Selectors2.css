@@ -1,0 +1,13 @@
+/* 
+Advance Selectors
+    **style attribute   (เลือกตาม attribute)
+        แท็ก[attribute]{
+            code;
+        }
+*/
+a[target]{
+    background-color: lightcyan;
+}
+a[target="_blank"]{
+    background-color: lightgreen;
+}

@@ -1,0 +1,25 @@
+/* 
+CSS Transform
+    การจัดการ element ด้วย transform
+    - translate(x,y)    กำหนดตำแหน่ง element
+    - scale(x,y)        ขยาย element
+    - rotate(มุม deg)    กำหนดการหมุนของ element
+    - skew(x,y)         กำหนดการเอียงของ element
+    - rotateX(มุม deg)   กำหนดการหมุนของ element แกน x
+    - rotateY(มุม deg)   กำหนดการหมุนของ element แกน y
+    - skewX(มุม deg)     กำหนดการเอียงของ element แกน x
+    - skewY(มุม deg)     กำหนดการเอียงของ element แกน y
+*/
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: lightcyan;
+    border: solid 2px;
+    margin: 200px;
+
+    /* transform: translate(200px,200px); */
+    /* transform: scale(2,2); */
+    /* transform: rotate(50deg); */
+    /* transform: rotateX(50deg); */
+    /* transform: skew(20deg,20deg); */
+}

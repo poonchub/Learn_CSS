@@ -1,0 +1,34 @@
+/* 
+Advance Selectors
+    **Before/After Pseudo   การใส่เนื้อหาในพื้นที่ก่อนและหลัง
+*/
+.is-required::before{
+    content: "*";
+    color: red;
+    padding-left: 2px;
+}
+
+/* การทำ overlay */
+header{
+    /* background-color: lightgray; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+header h1{
+    margin: 10px;
+    font-size: 2cm;
+}
+header::before{
+    content: "";
+    background: url('https://images8.alphacoders.com/468/468739.jpg') no-repeat center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}

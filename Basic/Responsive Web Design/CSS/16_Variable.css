@@ -1,0 +1,21 @@
+/* 
+CSS Variable
+    การสร้างตัวแปลช่วยให้อำนวนความสะดวกในการกำหนด style ให้แต่ละ element โดยลดขั้นตอนการทำงานที่ซ้ำซ้อนใน CSS ให้โค้ดมีความเป็นละเบียบและง่ายต่อการจัดการมากยิ่งขึ้น
+
+    การกำหนดตัวแปลสามารถกำหนดชื่อเองได้
+        :root{
+            --variableName: code;
+        }
+*/
+:root{
+    --box-border: solid 2px green;
+    --theme-color: lightblue;
+    --shadow: 10px 2px var(--theme-color);
+    --space: 10px;
+}
+.box1,.box2,.box3{
+    border: var(--box-border);
+    background-color: var(--theme-color);
+    box-shadow: var(--shadow);
+    margin: var(--space);
+}

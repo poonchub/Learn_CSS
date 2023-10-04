@@ -1,0 +1,17 @@
+/*
+**กำหนดสัดส่วน โดยใช้หน่วย fr อ้างอิงเป็นสัดส่วน
+    grid-template-column: ขนาดคอลัมน์1 ขนาดคอลัมน์2 ขนาดคอลัมน์n ;
+    grid-template-row: ขนาดคอลัมน์1 ขนาดคอลัมน์2 ขนาดคอลัมน์n ;
+    สามารลดรูปการเขียนคือ repeat(จำนวน,สัดส่วน)
+*/
+.item1{
+    padding: 10px;
+    background-color: lightpink;
+    text-align: center;
+    border: solid 2px ;
+}
+.container1{
+    display: grid;
+    grid-template-rows: repeat(3,150px);
+    grid-template-columns: 1fr 1fr 1fr;
+}
