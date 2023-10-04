@@ -1,5 +1,5 @@
 /*
-Overflow
+Overflow    จัดการข้อมูลที่มีพื่นที่เกิน element
     - visible       แสดงข้อมูลทั้งหมด(defualt)
     - hidden        ซ่อนข้อมูลที่เกิน
     - scroll        ให้มี scroll bar แสดงผลเมื่อข้อมูลเกิน
