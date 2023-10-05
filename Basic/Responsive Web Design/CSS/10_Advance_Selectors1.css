@@ -1,14 +1,21 @@
 /* 
 Advance Selectors  
     **targeted selectors
-        - descendant selectors
-            แท็กแม่ แท็กลูก(ทุกตัว){
+        - descendant selectors    *ทุกตัวข้างในแท็กแม่
+            แท็กแม่ แท็กลูก{
                 code;
             }
-        - child selectors
-            แท็กแม่>แท็กลูก(ตัวแรก){
+        - child selectors       
+            แท็กแม่>แท็กลูก{        *ทุกตัวที่อยู่ต่อจากแท็กแม่
                 code;
             }
+            แท็กแม่+แท็กลูก{        *ทุกตัวที่อยู่ต่อจากแท็กแม่
+                code;
+            }
+            แท็กแรก~แท็กสอง{      *แท็กรองทุกตัวที่อยู่ต่อจากแท็กแรก
+                code;
+            }
+
             
 */
 
