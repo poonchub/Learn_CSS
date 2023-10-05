@@ -10,7 +10,7 @@
     - justify           กระจายข้อความให้ทุกบรรทัดเท่ากัน
 */
 .a{
-    text-decoration: non;
+    text-decoration: none;
     text-align: center;
 }
 .b{
